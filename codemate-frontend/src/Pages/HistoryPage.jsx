@@ -8,7 +8,7 @@ const HistoryPage = ({ isDarkMode }) => {
     // Fetch history from the backend
     const fetchHistory = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/history");
+        const res = await fetch("https://codemate-ub8x.onrender.com/api/history");
         const data = await res.json();
         setHistory(data);
       } catch (error) {

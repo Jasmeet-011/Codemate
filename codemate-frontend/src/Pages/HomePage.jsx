@@ -25,7 +25,7 @@ const HomePage = ({ isDarkMode, toggleDarkMode, setHistory }) => {
     setResponse("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/query", {
+      const res = await fetch("https://codemate-ub8x.onrender.com/api/query", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
